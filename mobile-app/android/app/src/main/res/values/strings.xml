@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">آموزشگاه نصر</string>
+    <string name="title_activity_main">آموزشگاه نصر</string>
+    <string name="package_name">com.nasr.academy</string>
+    <string name="custom_url_scheme">com.nasr.academy</string>
+</resources>

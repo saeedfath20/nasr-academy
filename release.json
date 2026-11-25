@@ -1,0 +1,8 @@
+{
+  "version": "1.6.0",
+  "appId": "com.nasr.academy",
+  "site": "https://nasr-institute.ir/",
+  "protocol": 1,
+  "webVersion": "1.6.1",
+  "mobileUpdatesPaused": true
+}

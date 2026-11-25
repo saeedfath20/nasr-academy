@@ -1,0 +1,9 @@
+{
+  "version": "1.6.0",
+  "files": {
+    "app-config.js": "28745acd5ccacbd01350f826ccac12378b6ca51e2c7df6ee589c70071cc5dc0b",
+    "app.css": "c3e789614f330abc212089aa86acfa5e3e9827aa3f047a8d81b4994cb3651e21",
+    "app-ui.js": "fb0b29fefe403e65200c54530c643577b9edbe60c143b99a7c3ace2a11e420a2",
+    "app-auth.js": "3ef705f77c351ddf9b48b85782d2ae48fceee65252ba62b82a433907f9d02dc1"
+  }
+}

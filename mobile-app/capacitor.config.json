@@ -1,0 +1,22 @@
+{
+  "appId": "com.nasr.academy",
+  "appName": "آموزشگاه نصر",
+  "webDir": "dist",
+  "loggingBehavior": "none",
+  "server": {
+    "hostname": "localhost",
+    "androidScheme": "https",
+    "iosScheme": "capacitor",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": false
+    }
+  },
+  "backgroundColor": "#f5f6fc"
+}

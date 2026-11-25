@@ -1,0 +1,28 @@
+{
+  "name": "nasr-academy-mobile",
+  "version": "1.6.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare-core": "node scripts/prepare-core.mjs",
+    "build": "npm run prepare-core && vite build",
+    "android": "npm run build && cap sync android && cap open android",
+    "ios": "npm run build && cap sync ios && cap open ios",
+    "release": "node ../scripts/release.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/browser": "^8.0.5",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "nasr-secure-store": "file:./native-secure-store"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "vite": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
