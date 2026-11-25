@@ -1,0 +1,11 @@
+@media screen {
+.nasr-pwa #nasr-app .pwa-install { display:block;margin:20px auto 0;border:0;background:transparent;color:#6672a4;font:inherit;font-size:13px;min-height:36px; }
+.nasr-pwa #nasr-app .pwa-login-links { text-align:center;margin-top:18px;font-size:13px; }
+.nasr-pwa #nasr-app .pwa-login-links a { color:#6873aa;text-decoration:none; }
+.nasr-pwa #nasr-app .app-role-list form { margin:0; }
+.nasr-pwa #nasr-app .app-role-list form button { width:100%; }
+.nasr-pwa #nasr-app .pwa-loading { display:none;min-height:0;padding:12px 0; }
+.nasr-pwa #nasr-app .pwa-submitting .pwa-loading { display:block; }
+.nasr-pwa #nasr-app .pwa-submitting [type=submit] { opacity:.5;pointer-events:none; }
+.nasr-pwa #nasr-app .pwa-form-feedback { font-size:13px;color:#68728d;text-align:center; }
+}

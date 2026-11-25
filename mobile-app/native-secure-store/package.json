@@ -1,0 +1,19 @@
+{
+  "name": "nasr-secure-store",
+  "version": "1.1.0",
+  "description": "Private native session vault for Nasr Academy",
+  "license": "GPL-2.0-or-later",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "capacitor": {
+    "android": {
+      "src": "android"
+    },
+    "ios": {
+      "src": "ios"
+    }
+  },
+  "peerDependencies": {
+    "@capacitor/core": ">=8.0.0"
+  }
+}

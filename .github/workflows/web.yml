@@ -1,0 +1,29 @@
+name: Nasr web validation and package
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Check WordPress PHP syntax
+        run: find nasr-academy -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Test the Android update engine without building an APK
+        run: node tests/update-engine.mjs
+      - name: Package WordPress and its integrated PWA
+        run: node scripts/release-web.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nasr-wordpress-web
+          path: dist-release/nasr-academy-plugin-*.zip
+          if-no-files-found: error
